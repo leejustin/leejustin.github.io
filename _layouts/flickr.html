@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<div id="main" role="main">
+  <article class="wrap" itemscope itemtype="http://schema.org/Article">
+
+    {% include breadcrumbs.html %}
+    <!--<div class="page-title">
+      <h1>{{ page.title }}</h1>
+    </div>-->
+            <object width="400" height="300"> <param name="flashvars" value="offsite=true&lang=en-us&page_show_url=%2Fphotos%2Fisjustintime%2Fsets%2F72157652926219293%2Fshow%2F&page_show_back_url=%2Fphotos%2Fisjustintime%2Fsets%2F72157652926219293%2F&set_id=72157652926219293&jump_to="></param> <param name="movie" value="https://www.flickr.com/apps/slideshow/show.swf?v=1811922554"></param> <param name="allowFullScreen" value="true"></param><embed type="application/x-shockwave-flash" src="https://www.flickr.com/apps/slideshow/show.swf?v=1811922554" allowFullScreen="true" flashvars="offsite=true&lang=en-us&page_show_url=%2Fphotos%2Fisjustintime%2Fsets%2F72157652926219293%2Fshow%2F&page_show_back_url=%2Fphotos%2Fisjustintime%2Fsets%2F72157652926219293%2F&set_id=72157652926219293&jump_to=" width="400" height="300"></embed></object>
+    <div class="inner-wrap">
+
+      <div id="content" class="page-content" itemprop="articleBody">
+
+
+        <hr />
+        <aside>
+          {% if page.comments == true %}{% include comments.html %}{% endif %}
+        </aside>
+      </div><!-- /.content -->
+    </div><!-- /.inner-wrap -->
+  </article><!-- /.wrap -->
+</div><!-- /#main -->
