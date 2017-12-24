@@ -6,14 +6,10 @@
           alt="">
       </span>
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-      aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" [routerLink]="['/about']">About</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Something</a>
@@ -22,20 +18,9 @@
           <a class="nav-link" href="#">Interesting</a>
         </li>
       </ul>
+      <a class="nav-link" [routerLink]="['/test']">Test</a>
     </div>
   </nav>
-
-  <div class="container-fluid p-0">
-    <section class="feature-section p-3 p-lg-5 d-flex d-column" id="about">
-      <div class="my-auto">
-        <h1 class="mb-0">Justin
-          <span class="text-primary">Lee</span>
-        </h1>
-        <div class="subheading mb-5">San Francisco · (317) 123-1234 ·
-          <a href="mailto:names@email.com">names@email.com</a>
-        </div>
-        <p class="mb-5">I like burritos.</p>
-      </div>
-    </section>
-  </div>
+  
+  <router-outlet></router-outlet>
 </body>
