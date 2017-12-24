@@ -1,5 +1,4 @@
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
     <a class="navbar-brand" href="#page-top">
       <span class="d-none d-lg-block">
         <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="https://s7d1.scene7.com/is/image/PETCO/cat-category-090617-369w-269h-hero-cutout-d?fmt=png-alpha"
@@ -17,10 +16,41 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Interesting</a>
         </li>
+        <li class="list-inline-item">
+          <span class="fa fa-circle fa-stack-2x">
+            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+          </span>
+        </li>
       </ul>
-      <a class="nav-link" [routerLink]="['/test']">Test</a>
     </div>
+    <div class="collapse navbar-collapse">
+    <ul class="list-inline list-social-icons mb-0">
+        <li class="list-inline-item">
+          <a href="#">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+            </span>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+            </span>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+            </span>
+          </a>
+        </li>
+      </ul>
+      </div>
   </nav>
   
   <router-outlet></router-outlet>
-</body>
