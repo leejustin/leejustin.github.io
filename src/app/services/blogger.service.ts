@@ -17,7 +17,7 @@ export class BloggerService {
 
     }
 
-    getPosts(): Observable<Object> {
+    getPosts(): Observable<BlogList> {
         let url = BloggerService.BASE_URL + 'posts?key=' + BloggerService.API_KEY;
 
         return this.http

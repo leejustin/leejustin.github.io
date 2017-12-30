@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 
+import { BlogList } from './model/list';
 import { BloggerService } from '../services/blogger.service';
 
 @Component({
@@ -13,7 +14,7 @@ export class BlogListComponent {
     private taco: string;
     private createDate: Date;
 
-    private x;
+    private blogList: BlogList;
 
     constructor(private bloggerService: BloggerService) {
     }
@@ -21,16 +22,16 @@ export class BlogListComponent {
     ngOnInit(): void {
         this.bloggerService.getPosts()
             .subscribe(value => {
-                console.log("SUBSCRIPTION!!");
-                console.log(value);
+                this.blogList = value;
             })
     }
 
     onSubmit() {
         this.taco = "hello";
     }
-
-    test() {
-        console.log(this.x);
-    }
+    /*
+        test() {
+            console.log(this.blogList.posts);
+        }
+    */
 }

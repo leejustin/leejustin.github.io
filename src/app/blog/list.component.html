@@ -1,53 +1,11 @@
 <div class="container-fluid">
     <section class="feature-section p-3 p-lg-5 d-flex d-column" id="blog">
-        <a (click)="test()">TESTING</a>
         <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-4" *ngFor="let post of blogList?.posts">
                 <div class="card">
                     <img class="card-img-top" src="//placehold.it/720x350" alt="Card image cap">
                     <div class="card-block">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Button</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card">
-                    <img class="card-img-top" src="//placehold.it/720x350" alt="Card image cap">
-                    <div class="card-block">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. This
-                            is a longer text to make the card longest in height for the row.</p>
-                        <a href="#" class="btn btn-primary">Button</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card">
-                    <img class="card-img-top" src="//placehold.it/720x350" alt="Card image cap">
-                    <div class="card-block">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Button</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card">
-                    <img class="card-img-top" src="//placehold.it/720x350" alt="Card image cap">
-                    <div class="card-block">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Button</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card">
-                    <img class="card-img-top" src="//placehold.it/720x350" alt="Card image cap">
-                    <div class="card-block">
-                        <h4 class="card-title">Card title</h4>
+                        <h4 class="card-title">{{ post.title }}</h4>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         <a href="#" class="btn btn-primary">Button</a>
                     </div>
