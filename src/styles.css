@@ -7,37 +7,7 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/devicons/1.8.0/css/devicons.min.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css');
 
-body {
-    font-family: 'Open Sans', serif;
-    padding-top: 54px;
-    color: #868e96; }
-  
-  @media (min-width: 992px) {
-    body {
-      padding-top: 0;
-      padding-left: 15rem; } }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: 'Saira Extra Condensed', serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #343a40; }
-  
-  h1 {
-    font-size: 6rem;
-    line-height: 5.5rem; }
-  
-  h2 {
-    font-size: 3.5rem; }
-  
-  .subheading {
-    text-transform: uppercase;
-    font-weight: 500;
-    font-family: 'Saira Extra Condensed', serif;
-    font-size: 1.35rem; }
-  
+@media (min-width: 992px) {
+  body {
+    padding-top: 0;
+    padding-left: 15rem; } }

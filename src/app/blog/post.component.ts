@@ -10,7 +10,7 @@ import { BloggerService } from '../services/blogger.service';
 })
 
 export class BlogPostComponent {
-    //private blogPost: BlogPost;
+    private blogPost: BlogPost;
 
     constructor(
         private route: ActivatedRoute,
@@ -23,7 +23,14 @@ export class BlogPostComponent {
     }
 
     private getBlogPost(): void {
-        const id = +this.route.snapshot.paramMap.get('id');
+        const id: string = this.route.snapshot.paramMap.get('id');
         console.log(id);
+
+        this.bloggerService.getPost(id)
+            .subscribe(value => {
+                console.log("OH YES");
+                console.log(value);
+                this.blogPost = new BlogPost(value);
+            })
     }
 }

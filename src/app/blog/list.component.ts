@@ -6,7 +6,8 @@ import { BloggerService } from '../services/blogger.service';
 
 @Component({
     selector: 'blog',
-    templateUrl: './list.component.html'
+    templateUrl: './list.component.html',
+    styleUrls: ['./list.component.css']
 })
 
 export class BlogListComponent {
@@ -16,9 +17,17 @@ export class BlogListComponent {
     }
 
     ngOnInit(): void {
+        this.getBlogList();
+    }
+
+    private getBlogList() {
         this.bloggerService.getPosts()
             .subscribe(value => {
                 this.blogList = value;
             })
+    }
+
+    private loadPost(id: string) {
+        this.router.navigate(['/blog/' + id]);
     }
 }

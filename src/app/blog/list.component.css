@@ -1,0 +1,40 @@
+body {
+    font-family: 'Open Sans', serif;
+    padding-top: 54px;
+    color: #868e96; }
+  
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+font-family: 'Saira Extra Condensed', serif;
+font-weight: 700;
+text-transform: uppercase;
+color: #343a40; }
+
+h1 {
+font-size: 6rem;
+line-height: 5.5rem; }
+
+h2 {
+font-size: 3.5rem; }
+
+.subheading {
+text-transform: uppercase;
+font-weight: 500;
+font-family: 'Saira Extra Condensed', serif;
+font-size: 1.35rem; }
+
+/* Card Margins */
+.row {
+  margin-bottom: 1em;
+  justify-content: center; }
+
+[class*="col-"] {
+  background: #ffffff;
+  border: 1px solid rgb(255, 255, 255);
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  width: 100%; }
