@@ -24,12 +24,9 @@ export class BlogPostComponent {
 
     private getBlogPost(): void {
         const id: string = this.route.snapshot.paramMap.get('id');
-        console.log(id);
-
+        
         this.bloggerService.getPost(id)
             .subscribe(value => {
-                console.log("OH YES");
-                console.log(value);
                 this.blogPost = new BlogPost(value);
             })
     }

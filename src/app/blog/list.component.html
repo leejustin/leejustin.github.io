@@ -6,7 +6,8 @@
                     <img class="card-img-top" src="//placehold.it/720x350" alt="Card image cap">
                     <div class="card-block">
                         <h4 class="card-title"><a (click)="loadPost(post.id)">{{ post.title }}</a></h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <!--<p class="card-text">{{ post.content | slice:0:99 }}...</p>-->
+                        <p class="card-text"><small class="text-muted">Published on {{ post.published | date: 'MMMM d, y' }}</small>
                     </div>
                 </div>
             </div>
