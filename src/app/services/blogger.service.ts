@@ -5,6 +5,7 @@ import { Observable } from 'rxjs';
 import 'rxjs/add/operator/map';
 
 import { BlogList } from '../blog/model/list';
+import { BlogPost } from '../blog/model/post';
 
 @Injectable()
 
@@ -15,6 +16,14 @@ export class BloggerService {
 
     constructor(private http: Http) {
 
+    }
+
+    getPost(id: string): Observable<BlogPost> {
+        let url = BloggerService.BASE_URL + 'posts/' + id + '?key=' + BloggerService.API_KEY;
+
+        return this.http
+            .get(url)
+            .map(v => new BlogPost(v.json()));
     }
 
     getPosts(): Observable<BlogList> {
