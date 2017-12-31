@@ -6,7 +6,8 @@ import { BloggerService } from '../services/blogger.service';
 
 @Component({
     selector: 'post',
-    templateUrl: './post.component.html'
+    templateUrl: './post.component.html',
+    styleUrls: ['./post.component.css']
 })
 
 export class BlogPostComponent {
@@ -24,7 +25,7 @@ export class BlogPostComponent {
 
     private getBlogPost(): void {
         const id: string = this.route.snapshot.paramMap.get('id');
-        
+
         this.bloggerService.getPost(id)
             .subscribe(value => {
                 this.blogPost = new BlogPost(value);
