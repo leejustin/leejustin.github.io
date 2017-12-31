@@ -26,3 +26,8 @@ color: #8a8a8a;
 text-align: center;
 font-weight: 10;
 }
+
+.card-text {
+margin-left: 3em;
+margin-right: 3em;
+}
