@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 import { BlogList } from './model/list';
 import { BloggerService } from '../services/blogger.service';
@@ -9,14 +10,9 @@ import { BloggerService } from '../services/blogger.service';
 })
 
 export class BlogListComponent {
-    @Input() showButtons: boolean;
-    @Input() sectionTitle: string;
-    private taco: string;
-    private createDate: Date;
-
     private blogList: BlogList;
 
-    constructor(private bloggerService: BloggerService) {
+    constructor(private bloggerService: BloggerService, private router: Router) {
     }
 
     ngOnInit(): void {
@@ -25,13 +21,4 @@ export class BlogListComponent {
                 this.blogList = value;
             })
     }
-
-    onSubmit() {
-        this.taco = "hello";
-    }
-    /*
-        test() {
-            console.log(this.blogList.posts);
-        }
-    */
 }

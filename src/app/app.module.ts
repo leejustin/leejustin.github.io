@@ -6,6 +6,7 @@ import { AboutComponent } from './about/about.component';
 import { AppComponent } from './app.component';
 import { BloggerService } from './services/blogger.service';
 import { BlogListComponent } from './blog/list.component';
+import { BlogPostComponent } from './blog/post.component';
 import { TestComponent } from './test/test-list.component';
 import { routing } from './app.routes';
 
@@ -14,6 +15,7 @@ import { routing } from './app.routes';
     AboutComponent,
     AppComponent,
     BlogListComponent,
+    BlogPostComponent,
     TestComponent
   ],
   imports: [
