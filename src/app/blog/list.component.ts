@@ -11,7 +11,7 @@ import { BloggerService } from '../services/blogger.service';
 })
 
 export class BlogListComponent {
-    private blogList: BlogList;
+    public blogList: BlogList;
 
     constructor(private bloggerService: BloggerService, private router: Router) {
     }

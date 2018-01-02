@@ -11,7 +11,7 @@ import { BloggerService } from '../services/blogger.service';
 })
 
 export class BlogPostComponent {
-    private blogPost: BlogPost;
+    public blogPost: BlogPost;
 
     constructor(
         private route: ActivatedRoute,
