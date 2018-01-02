@@ -22,8 +22,8 @@ export class BlogListComponent {
 
     private getBlogList() {
         this.bloggerService.getPosts()
-            .subscribe(value => {
-                this.blogList = value;
+            .subscribe(result => {
+                this.blogList = result;
             })
     }
 

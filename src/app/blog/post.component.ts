@@ -27,8 +27,14 @@ export class BlogPostComponent {
         const id: string = this.route.snapshot.paramMap.get('id');
 
         this.bloggerService.getPost(id)
-            .subscribe(value => {
-                this.blogPost = new BlogPost(value);
+            .subscribe(
+            result => {
+                this.blogPost = new BlogPost(result);
+            },
+            error => {
+                if (error['status'] == '404') {
+                    this.router.navigate(['/404']);
+                }
             })
     }
 }

@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Http, Headers, Response, RequestOptions } from '@angular/http';
+import { Router } from '@angular/router';
 
 import { Observable } from 'rxjs';
 import 'rxjs/add/operator/map';
@@ -14,7 +15,7 @@ export class BloggerService {
     private static readonly API_KEY: string = 'AIzaSyBRl6jQNwtAjBBO3_iIe0D7uxoOKMlHM2o';
     private static readonly BASE_URL: string = 'https://www.googleapis.com/blogger/v3/blogs/8905257953465587624/';
 
-    constructor(private http: Http) {
+    constructor(private http: Http, private router: Router) {
 
     }
 
@@ -37,5 +38,4 @@ export class BloggerService {
     private getOptions(): RequestOptions {
         return new RequestOptions();
     }
-
 };

@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { BloggerService } from './services/blogger.service';
 import { BlogListComponent } from './blog/list.component';
 import { BlogPostComponent } from './blog/post.component';
+import { NotFoundComponent } from './404.component';
 import { routing } from './app.routes';
 
 @NgModule({
@@ -14,7 +15,8 @@ import { routing } from './app.routes';
     AboutComponent,
     AppComponent,
     BlogListComponent,
-    BlogPostComponent
+    BlogPostComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
