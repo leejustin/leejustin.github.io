@@ -28,6 +28,11 @@ export class BlogListComponent {
     }
 
     private loadPost(id: string) {
-        this.router.navigate(['/blog/' + id]);
+        var routePath: string = '/blog';
+
+        if (id != "" && id != null) {
+            routePath = '/blog/' + id;
+        }
+        this.router.navigate([routePath]);
     }
 }
