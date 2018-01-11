@@ -1,4 +1,8 @@
 
+  h2 {
+    font-size: 0.8rem; 
+    font-weight: 800; }
+
   .list-social-icons a {
     color: #495057; }
     .list-social-icons a:hover {
@@ -11,7 +15,10 @@
     .list-icons .list-inline-item i:hover {
       color: #BD897E; }
   
-
+  #sideNav .navbar-nav .nav-item .nav-link {
+    font-weight: 300;
+    text-transform: uppercase; }
+  
   @media (min-width: 992px) {
     #sideNav {
       text-align: center;
@@ -62,14 +69,13 @@
       padding-top: 3rem !important;
       padding-bottom: 3rem !important; } }
   
-  .bg-primary {
-    background-color: #1b1b1b !important; }
+  /*.bg-primary {
+    background-color: #ececec !important; }*/
   
   .text-primary {
     color: #BD5D38 !important; }
 
 a {
-    color: #ffffff; }
+    color: #838383; }
     a:hover, a:focus, a:active {
       color: #7a7a7a; }
-  

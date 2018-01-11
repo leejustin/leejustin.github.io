@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid bg-primary">
     <section class="feature-section p-3 p-lg-5 d-flex d-column" id="blog">
         <div class="row">
             <div class="col-lg-4" *ngFor="let post of blogList?.posts">
@@ -10,7 +10,7 @@
                         </h4>
                         <!--<p class="card-text">{{ post.content | slice:0:99 }}...</p>-->
                         <p class="card-text">
-                            <small class="text-muted">Published on {{ post.published | date: 'MMMM d, y' }}</small>
+                            <small class="text-muted">{{ post.published | date: 'MMMM d, y' }} | Category</small>
                         </p>
                     </div>
                 </div>

@@ -10,7 +10,7 @@ h4,
 h5,
 h6 {
 font-family: 'Saira Extra Condensed', serif;
-font-weight: 700;
+font-weight: 300;
 text-transform: uppercase;
 color: #343a40; }
 
@@ -29,12 +29,20 @@ font-size: 1.35rem; }
 
 /* Card Margins */
 .row {
-  margin-bottom: 1em;
-  justify-content: center; }
+margin-bottom: 1em;
+justify-content: center; }
 
 [class*="col-"] {
-  background: #ffffff;
-  border: 1px solid rgb(255, 255, 255);
-  padding-top: .75rem;
-  padding-bottom: .75rem;
-  width: 100%; }
+background: #f0f0f0;
+border: 0px solid rgb(255, 255, 255);
+padding-top: .75rem;
+padding-bottom: .75rem;
+width: 100%; }
+
+a {
+color: #383838; }
+
+a:hover, a:focus, a:active {
+color: #7a7a7a; 
+text-decoration: none; }
+  
