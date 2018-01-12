@@ -52,7 +52,7 @@
               display: block; } }
   
   section.feature-section {
-    border-bottom: 1px solid #dee2e6;
+    border-bottom: 1px solid #000000;
     padding-top: 5rem !important;
     padding-bottom: 5rem !important; }
     section.feature-section .feature-item .feature-date {
