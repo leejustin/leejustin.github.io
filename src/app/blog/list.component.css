@@ -45,4 +45,6 @@ color: #383838; }
 a:hover, a:focus, a:active {
 color: #7a7a7a; 
 text-decoration: none; }
-  
+
+.card-img-top {
+width: fill; }

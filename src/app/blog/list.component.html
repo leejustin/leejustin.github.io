@@ -3,14 +3,16 @@
         <div class="row">
             <div class="col-lg-4" *ngFor="let post of blogList?.posts">
                 <div class="card">
-                    <img class="card-img-top" (click)="loadPost(post.id)" src="//placehold.it/720x350" alt="Card image cap">
+                    <div class="thumbnail">
+                        <img class="card-img-top" (click)="loadPost(post.id)" src="{{ getThumbnail(post.id) }}" alt="{{ post.title }}">
+                    </div>
                     <div class="card-block">
                         <h4 class="card-title">
                             <a [routerLink]="" (click)="loadPost(post.id)">{{ post.title }}</a>
                         </h4>
                         <!--<p class="card-text">{{ post.content | slice:0:99 }}...</p>-->
                         <p class="card-text">
-                            <small class="text-muted">{{ post.published | date: 'MMMM d, y' }} | Category</small>
+                            <small class="text-muted">{{ post.published | date: 'MMMM d, y' }} | {{ getCategory(post.labels) }}</small>
                         </p>
                     </div>
                 </div>

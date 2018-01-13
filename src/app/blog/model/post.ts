@@ -6,6 +6,7 @@ export class BlogPost {
     public url: string;
     public title: string;
     public content: string;
+    public labels: string[];
 
     constructor(input: Object) {
         this.id = input['id'];
@@ -14,5 +15,6 @@ export class BlogPost {
         this.url = input['url'];
         this.title = input['title'];
         this.content = input['content'];
+        this.labels = input['labels'];
     }
 }

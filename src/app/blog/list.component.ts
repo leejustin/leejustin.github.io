@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 
 import { BlogList } from './model/list';
 import { BloggerService } from '../services/blogger.service';
+import { GcloudService } from '../services/gcloud.service';
 
 @Component({
     selector: 'blog',
@@ -12,8 +13,13 @@ import { BloggerService } from '../services/blogger.service';
 
 export class BlogListComponent {
     public blogList: BlogList;
+    public gcloudService: GcloudService;
+
+    //TODO: store these values in a global class
+    private static readonly categories: string[] = ['Finance', 'Technology', 'Photography', 'p-finance', 'p-photography', 'Lifestyle'];
 
     constructor(private bloggerService: BloggerService, private router: Router) {
+        this.gcloudService = new GcloudService();
     }
 
     ngOnInit(): void {
@@ -25,6 +31,24 @@ export class BlogListComponent {
             .subscribe(result => {
                 this.blogList = result;
             })
+    }
+
+    private getThumbnail(id: string): string {
+        return this.gcloudService.getPostThumbnail(id, "2018");
+    }
+
+    //TODO: look into creating a helper class for this
+    private getCategory(labels: string[]): string {
+        if (labels == null || labels.length < 1) {
+            return "Uncategorized";
+        }
+        for (let label of labels) {
+            for (let category of BlogListComponent.categories) {
+                if (label.toUpperCase() === category.toUpperCase()) {
+                    return category;
+                }
+            }
+        }
     }
 
     private loadPost(id: string) {
