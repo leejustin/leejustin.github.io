@@ -36,7 +36,7 @@ export class BlogListComponent {
         return this.gcloudService.getPostThumbnail(id, "2018");
     }
 
-    private getCategory(labels: string[]): string {
+    public getCategory(labels: string[]): string {
         return this.postHelperService.getCategory(labels);
     }
 
