@@ -21,6 +21,10 @@ margin-left: 3.5em;
 margin-right: 3.5em;
 }
 
+.card-block {
+margin: 1.5em 0;    
+}
+
 .card-published {
 color: #8a8a8a;
 text-align: center;
