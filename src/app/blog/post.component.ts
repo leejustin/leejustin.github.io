@@ -3,6 +3,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 
 import { BlogPost } from './model/post';
 import { BloggerService } from '../services/blogger.service';
+import { PostHelperService } from '../helper/post-helper.service';
 
 @Component({
     selector: 'post',
@@ -16,6 +17,7 @@ export class BlogPostComponent {
     constructor(
         private route: ActivatedRoute,
         private bloggerService: BloggerService,
+        private postHelperService: PostHelperService,
         private router: Router) {
     }
 
@@ -36,5 +38,9 @@ export class BlogPostComponent {
                     this.router.navigate(['/404']);
                 }
             })
+    }
+
+    private getCategory(labels: string[]): string {
+        return this.postHelperService.getCategory(labels);
     }
 }

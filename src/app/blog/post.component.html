@@ -3,7 +3,7 @@
         <div class="card">
             <div class="card-block">
                 <h1 class="card-title">{{ blogPost?.title }}</h1>
-                <h6 class="card-published">{{ blogPost?.updated | date: 'MMMM d, y'}} | Category</h6>
+                <h6 class="card-published">{{ blogPost?.updated | date: 'MMMM d, y'}} | {{ getCategory(blogPost?.labels) }}</h6>
                 <div class="card-text" [innerHtml]="blogPost?.content"></div>
             </div>
         </div>

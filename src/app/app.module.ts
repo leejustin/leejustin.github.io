@@ -9,6 +9,7 @@ import { BlogListComponent } from './blog/list.component';
 import { BlogPostComponent } from './blog/post.component';
 import { GcloudService } from './services/gcloud.service';
 import { NotFoundComponent } from './404.component';
+import { PostHelperService } from './helper/post-helper.service';
 import { routing } from './app.routes';
 
 @NgModule({
@@ -26,7 +27,8 @@ import { routing } from './app.routes';
   ],
   providers: [
     BloggerService,
-    GcloudService
+    GcloudService,
+    PostHelperService
   ],
   bootstrap: [ AppComponent ]
 })
