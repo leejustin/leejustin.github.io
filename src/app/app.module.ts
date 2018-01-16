@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { BloggerService } from './services/blogger.service';
 import { BlogListComponent } from './blog/list.component';
 import { BlogPostComponent } from './blog/post.component';
+import { ContactComponent } from './contact/contact.component';
 import { GcloudService } from './services/gcloud.service';
 import { NotFoundComponent } from './404.component';
 import { PostHelperService } from './helper/post-helper.service';
@@ -18,6 +19,7 @@ import { routing } from './app.routes';
     AppComponent,
     BlogListComponent,
     BlogPostComponent,
+    ContactComponent,
     NotFoundComponent
   ],
   imports: [
