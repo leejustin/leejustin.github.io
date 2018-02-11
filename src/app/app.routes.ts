@@ -5,6 +5,7 @@ import { BlogListComponent } from './blog/list.component';
 import { BlogPostComponent } from './blog/post.component';
 import { NotFoundComponent } from './404.component';
 import { PhotographyComponent } from './photography/gallery.component';
+import { PortfolioComponent } from './technology/portfolio.component';
 
 export const routes: Routes = [
     {
@@ -16,7 +17,8 @@ export const routes: Routes = [
     { path: 'about', component: AboutComponent },
     { path: 'blog', component: BlogListComponent },
     { path: 'blog/:id', component: BlogPostComponent },
-    { path: 'photography', component: PhotographyComponent }
+    { path: 'photography', component: PhotographyComponent },
+    { path: 'technology', component: PortfolioComponent }
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(routes);

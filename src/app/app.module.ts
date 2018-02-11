@@ -12,6 +12,7 @@ import { NotFoundComponent } from './404.component';
 import { PhotographyComponent } from './photography/gallery.component';
 import { PostHelperService } from './helper/post-helper.service';
 import { routing } from './app.routes';
+import { PortfolioComponent } from './technology/portfolio.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { routing } from './app.routes';
     BlogListComponent,
     BlogPostComponent,
     NotFoundComponent,
-    PhotographyComponent
+    PhotographyComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,
