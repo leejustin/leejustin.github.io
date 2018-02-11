@@ -9,6 +9,7 @@ import { BlogListComponent } from './blog/list.component';
 import { BlogPostComponent } from './blog/post.component';
 import { GcloudService } from './services/gcloud.service';
 import { NotFoundComponent } from './404.component';
+import { PhotographyComponent } from './photography/gallery.component';
 import { PostHelperService } from './helper/post-helper.service';
 import { routing } from './app.routes';
 
@@ -18,7 +19,8 @@ import { routing } from './app.routes';
     AppComponent,
     BlogListComponent,
     BlogPostComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    PhotographyComponent
   ],
   imports: [
     BrowserModule,
