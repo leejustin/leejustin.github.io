@@ -3,7 +3,7 @@ import { Http, Headers, Response, RequestOptions } from '@angular/http';
 import { Router } from '@angular/router';
 
 import { Observable } from 'rxjs';
-import 'rxjs/add/operator/map';
+import { map } from 'rxjs/operators';
 
 import { BlogList } from '../blog/model/list';
 import { BlogPost } from '../blog/model/post';
@@ -24,7 +24,7 @@ export class BloggerService {
 
         return this.http
             .get(url)
-            .map(v => new BlogPost(v.json()));
+            .pipe(map(v => new BlogPost(v.json())));
     }
 
     getPosts(): Observable<BlogList> {
@@ -32,7 +32,7 @@ export class BloggerService {
 
         return this.http
             .get(url)
-            .map(v => new BlogList(v.json()));
+            .pipe(map(v => new BlogList(v.json())));
     }
 
     private getOptions(): RequestOptions {
