@@ -14,7 +14,13 @@
     font-size: 3rem; }
     .list-icons .list-inline-item i:hover {
       color: #BD897E; }
-  
+
+  .list-inline {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+ 
   #sideNav .navbar-nav .nav-item .nav-link {
     font-weight: 300;
     text-transform: uppercase; }
@@ -50,7 +56,7 @@
             display: block; }
             #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
               display: block; } }
-  
+ 
   section.feature-section {
     border-bottom: 1px solid #000000;
     padding-top: 5rem !important;
