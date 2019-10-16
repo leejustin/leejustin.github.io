@@ -8,13 +8,13 @@ import { Observable } from 'rxjs';
 
 export class GcloudService {
 
-    private static readonly BASE_URL: string = 'https://storage.googleapis.com/';
-    private static readonly ACCOUNT_ID: string = 'playground-180602.appspot.com/';
+    private static readonly BASE_URL: string = 'https://storage.googleapis.com';
+    private static readonly ACCOUNT_ID: string = 'playground-180602.appspot.com';
 
     constructor() {
     }
 
     getPostThumbnail(id: string, year: string): string {
-        return GcloudService.BASE_URL + GcloudService.ACCOUNT_ID + 'blog/' + year + '/' + id + '.jpg';
+        return `${GcloudService.BASE_URL}/${GcloudService.ACCOUNT_ID}/blog/${year}/${id}.jpg`;
     }
 };
