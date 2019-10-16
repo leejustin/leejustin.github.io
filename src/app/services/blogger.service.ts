@@ -16,7 +16,6 @@ export class BloggerService {
     private static readonly BASE_URL: string = 'https://www.googleapis.com/blogger/v3/blogs/8905257953465587624';
 
     constructor(private http: Http, private router: Router) {
-
     }
 
     getPost(id: string): Observable<BlogPost> {
