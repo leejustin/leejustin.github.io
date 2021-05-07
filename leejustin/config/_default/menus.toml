@@ -8,7 +8,7 @@ url = "/"
 name = "Archive"
 weight = 200
 identifier = "archive"
-url = "/archive/"
+url = "/posts/"
 
 [[main]]
 name = "About Me"
