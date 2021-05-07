@@ -1,0 +1,29 @@
+[[main]]
+name = "Home"
+identifier = "home"
+weight = 100
+url = "/"
+
+[[main]]
+name = "Archive"
+weight = 200
+identifier = "archive"
+url = "/archive/"
+
+[[main]]
+name = "About Me"
+weight = 1000
+identifier = "about"
+url = "/about/"
+
+[[main]]
+name = "Projects"
+weight = 400
+identifier = "projects"
+url = "/projects/"
+
+[[main]]
+name = "Photography"
+weight = 500
+identifier = "photography"
+url = "/photography/"

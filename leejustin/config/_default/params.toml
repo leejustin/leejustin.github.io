@@ -1,0 +1,30 @@
+title = "Hi, I'm Justin"
+author = "Justin Lee"
+description = "Lol"
+profilePicture = "images/profile.jpg"
+
+singleDateFormat = "2/1/2006"
+indexDateFormat = "2/1/2006"
+listDateFormat = "2/1/2006"
+
+
+## Social links
+[[socialIcons]]
+icon = "fab fa-linkedin"
+title = "Linkedin"
+url = "https://www.linkedin.com/in/justinylee/"
+
+[[socialIcons]]
+icon = "fab fa-github"
+title = "GitHub"
+url = "https://github.com/leejustin"
+
+[[socialIcons]]
+icon = "fab fa-flickr"
+title = "flickr"
+url = "https://www.flickr.com/photos/isjustintime/albums/72157652926219293"
+
+[[socialIcons]]
+icon = "fas fa-envelope"
+title = "e-mail"
+url = "mailto:hello@leejustin.com"

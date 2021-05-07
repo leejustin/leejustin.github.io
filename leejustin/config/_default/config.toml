@@ -1,0 +1,11 @@
+# Hugo Configs
+baseURL = "https://leejustin.com"
+languageCode = "en-us"
+title = "Justin Lee's Corner"
+theme = "anatole"
+enobleEmoji = true
+enableRobotsTXT = true
+
+# Theme Configs
+#googleAnalytics = "todo"
+#disqusShortname = "todo"
